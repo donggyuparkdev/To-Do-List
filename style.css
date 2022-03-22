@@ -6,18 +6,21 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: rgba(247, 243, 242, 0.8);
     min-height: 100vh;
+    border-top: 10px solid rgb(100, 100, 175);
+    border-bottom: 10px solid rgb(100, 100, 175);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .task-area {
-    border: 1px solid lightgray;
+    border: 1px solid rgb(100, 100, 175);
+    margin-top: 10px;
 }
 
 .task-tabs {
     display: flex;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(100, 100, 175);
     position: relative;
 }
 
@@ -27,12 +30,13 @@ body {
 
 #under-line {
     height: 4px;
-    background-color: pink;
+    background-color: rgb(100, 100, 175);
     position: absolute;
     width: 80px;
     left: 0px;
     top: 52px;
     padding: 0px;
+    transition: 0.5s;
 }
 
 .task {
@@ -45,4 +49,6 @@ body {
     text-decoration: line-through;
 }
 
-s
+.task-tabs div {
+    cursor: pointer;
+}
